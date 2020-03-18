@@ -8,10 +8,15 @@
             <h4>Categories</h4>
             <hr />
             <div class="sticky">
-              <Category v-for="section in categories" :category="section" :key="section.id" />
+              <Category
+                v-for="section in categories"
+                :category="section"
+                :key="section.id"
+              />
             </div>
           </b-col>
           <b-col cols="8">
+            <Carousel />
             <h3>Product Catalogue</h3>
             <hr />
             <Product v-for="item in products" :product="item" :key="item.id" />
@@ -22,11 +27,11 @@
   </div>
 </template>
 
-
 <script>
 import Product from "@/components/Product.vue";
 import Category from "@/components/Category.vue";
 import Header from "@/components/Header.vue";
+import Carousel from "@/components/Carousel.vue";
 export default {
   name: "App",
   data() {
@@ -94,14 +99,14 @@ export default {
         },
 
         {
-          id: 7,
+          id: 11,
           name: "Court Heels",
           price: "8,000",
           imageLink: require("./assets/heel.jpg")
         },
 
         {
-          id: 9,
+          id: 12,
           name: "Mac Book Pro",
           price: "350,000",
           imageLink: require("./assets/mac.jpg")
@@ -154,7 +159,8 @@ export default {
   components: {
     Product,
     Header,
-    Category
+    Category,
+    Carousel
   }
 };
 </script>
