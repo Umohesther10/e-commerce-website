@@ -8,11 +8,7 @@
             <h4>Categories</h4>
             <hr />
             <div class="sticky">
-              <Category
-                v-for="section in categories"
-                :category="section"
-                :key="section.id"
-              />
+              <Category v-for="section in categories" :category="section" :key="section.id" />
             </div>
           </b-col>
           <b-col cols="8">
@@ -24,6 +20,7 @@
         </b-row>
       </b-container>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -32,6 +29,7 @@ import Product from "@/components/Product.vue";
 import Category from "@/components/Category.vue";
 import Header from "@/components/Header.vue";
 import Carousel from "@/components/Carousel.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: "App",
   data() {
@@ -160,7 +158,8 @@ export default {
     Product,
     Header,
     Category,
-    Carousel
+    Carousel,
+    Footer
   }
 };
 </script>
