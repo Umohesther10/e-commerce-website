@@ -1,5 +1,5 @@
 <template>
-  <div class="p-3 mb-2 bg-primary text-white">
+  <div id="top" class="p-3 mb-2 bg-primary text-white">
     <b-container class="bv-example-row" fixed="bottom">
       <b-row>
         <b-col>
@@ -234,6 +234,9 @@
                 ACCOMODATION
               </span>
             </a>
+            <a href="#app">
+              <button>Go Up</button>
+            </a>
           </div>
         </b-col>
       </b-row>
@@ -246,7 +249,10 @@ export default {
 };
 </script>
 
-<style  scoped>
+<style scoped>
+#top {
+  margin-top: 20px;
+}
 .hover:hover {
   color: rgb(21, 21, 247);
 }

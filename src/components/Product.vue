@@ -12,8 +12,17 @@
       <button>Buy Now</button>
     </div>-->
 
+    
     <div class="point">
-      <b-card img-src img-alt="Image" img-top tag="article" style="max-width: 20rem;" class="mb-2">
+      <b-card
+        :to="
+          `/product/${product.id}-${product.name
+            .replace(/[' ']+/g, '-')
+            .toLowerCase()}`
+        "
+      >
+       <!-- img-src img-alt="Image" img-top tag="article" style="max-width: 20rem;"
+        class="mb-2" > -->
         <b-img
           :src="product.imageLink"
           rounded
@@ -22,12 +31,16 @@
         ></b-img>
         <b-card-text>
           <p>
-            <b>{{ product.name }} {{ product.id }}</b>
+            <b>{{ product.name }}</b>
           </p>
           <p>&#8358; {{ product.price }}</p>
         </b-card-text>
 
-        <b-button href="#" variant="primary" block>Buy Now</b-button>
+        <b-button :to="
+          `/product/${product.id}-${product.name
+            .replace(/[' ']+/g, '-')
+            .toLowerCase()}`
+        " href="#" variant="primary" block>Buy Now</b-button>
       </b-card>
     </div>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="cate">
     <b-list-group style=" margin-top: 5px;">
       <b-list-group-item button>{{ category.name }}</b-list-group-item>
     </b-list-group>
@@ -12,4 +12,8 @@ export default {
   props: ["category"]
 };
 </script>
-
+<style scoped>
+/* .cate {
+  border: 2px, grey solid;
+} */
+</style>

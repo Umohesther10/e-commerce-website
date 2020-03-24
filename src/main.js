@@ -8,6 +8,9 @@ import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "@fortawesome/fontawesome-free/js/all.js";
 import VueCarousel from "vue-carousel";
+import vuescroll from "vue-scroll";
+
+Vue.use(vuescroll);
 
 Vue.use(VueCarousel);
 

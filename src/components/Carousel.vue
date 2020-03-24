@@ -6,10 +6,10 @@
       :autoplay="true"
       :loop="true"
       :speed="2000"
-      :adjustableHeight="true"
     >
       <slide v-for="slide in images" :key="slide.path">
-        <img style="display: block; width: 60%; height: 400px; margin: 0 auto;" :src="slide.path" />
+        <b-img :src="slide.path" fluid-grow alt="Fluid-grow image"></b-img>
+        <!-- <img style="display: block; width: 60%; height: 400px; margin: 0 auto;" :src="slide.path" /> -->
       </slide>
     </carousel>
   </div>
