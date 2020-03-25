@@ -1,5 +1,5 @@
 <template>
-  <div class="product">
+  <div class="product my-2">
     <!-- <div>
       <img :src="product.imageLink" />
     </div>
@@ -12,7 +12,6 @@
       <button>Buy Now</button>
     </div>-->
 
-    
     <div class="point">
       <b-card
         :to="
@@ -21,8 +20,8 @@
             .toLowerCase()}`
         "
       >
-       <!-- img-src img-alt="Image" img-top tag="article" style="max-width: 20rem;"
-        class="mb-2" > -->
+        <!-- img-src img-alt="Image" img-top tag="article" style="max-width: 20rem;"
+        class="mb-2" >-->
         <b-img
           :src="product.imageLink"
           rounded
@@ -36,11 +35,16 @@
           <p>&#8358; {{ product.price }}</p>
         </b-card-text>
 
-        <b-button :to="
+        <b-button
+          :to="
           `/product/${product.id}-${product.name
             .replace(/[' ']+/g, '-')
             .toLowerCase()}`
-        " href="#" variant="primary" block>Buy Now</b-button>
+        "
+          href="#"
+          variant="primary"
+          block
+        >Buy Now</b-button>
       </b-card>
     </div>
   </div>

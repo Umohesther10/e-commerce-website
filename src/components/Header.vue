@@ -2,7 +2,7 @@
   <div class="head">
     <div>
       <b-navbar toggleable="lg" type="dark" variant="primary" fixed="top">
-        <b-navbar-brand style="font-size: 30px" href="#">CHERRY ONLINE SHOP</b-navbar-brand>
+        <b-navbar-brand style="font-size: 30px" href="/">CHERRY ONLINE SHOP</b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -18,7 +18,13 @@
                 class="mr-sm-2"
                 placeholder="Search, Products, Categories"
               ></b-form-input>
-              <b-button style="border: 1px, solid ; border-radius: 10px;" size="sm" class="my-2 my-sm-0" type="submit" variant="primary">Search</b-button>
+              <b-button
+                style="border: 1px, solid ; border-radius: 10px;"
+                size="sm"
+                class="my-2 my-sm-0"
+                type="submit"
+                variant="primary"
+              >Search</b-button>
             </b-nav-form>
 
             <!-- <b-nav-item-dropdown text="Lang" right>
@@ -34,6 +40,8 @@
                 <em>User</em>
               </template>
               <b-dropdown-item href="#">Profile</b-dropdown-item>
+              <b-dropdown-item href="#">Sign Up</b-dropdown-item>
+              <b-dropdown-item href="#">Cart</b-dropdown-item>
               <b-dropdown-item href="#">Sign Out</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>

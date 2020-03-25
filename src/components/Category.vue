@@ -1,8 +1,20 @@
 <template>
   <div class="cate">
-    <b-list-group style=" margin-top: 5px;">
+    <ul>
+      <li class="change">
+        <b-row>
+          <b-col cols="1">
+            <i :class="category.icon"></i>
+          </b-col>
+
+          <b-col>{{ category.name }}</b-col>
+        </b-row>
+      </li>
+    </ul>
+
+    <!-- <b-list-group style=" margin-top: 5px;">
       <b-list-group-item button>{{ category.name }}</b-list-group-item>
-    </b-list-group>
+    </b-list-group>-->
   </div>
 </template>
 
@@ -13,7 +25,12 @@ export default {
 };
 </script>
 <style scoped>
-/* .cate {
-  border: 2px, grey solid;
-} */
+.change {
+  list-style-type: none;
+  font-size: 15px;
+}
+.change:hover {
+  color:#0373fc;
+  cursor: pointer;
+}
 </style>

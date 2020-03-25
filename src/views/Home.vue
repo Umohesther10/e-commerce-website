@@ -4,22 +4,21 @@
     <div class="root">
       <b-container class="bv-example-row" fluid>
         <b-row>
-          <b-col cols="4" style="border: 2px; green; solid;">
+          <b-col cols="3" style="border: 2px; green; solid;">
             <h4>Categories</h4>
+
             <hr />
             <div class="sticky">
-              <Category
-                v-for="section in categories"
-                :category="section"
-                :key="section.id"
-              />
+              <Category v-for="section in categories" :category="section" :key="section.id" />
             </div>
           </b-col>
-          <b-col cols="8">
+          <b-col cols="9">
             <Carousel />
             <h3>Product Catalogue</h3>
             <hr />
-            <Product v-for="item in products" :product="item" :key="item.id" />
+            <div class="center">
+              <Product v-for="item in products" :product="item" :key="item.id" />
+            </div>
           </b-col>
         </b-row>
       </b-container>
@@ -118,43 +117,53 @@ export default {
       categories: [
         {
           id: "1",
-          name: `Weavons and wigs`
+          name: `Weavons and wigs`,
+          icon: "fas fa-cut"
         },
         {
           id: "2",
-          name: `Baby Accessories`
+          name: `Baby Accessories`,
+          icon: "fas fa-baby"
         },
         {
           id: "3",
-          name: `Phones`
+          name: `Phones`,
+          icon: "fas fa-mobile-alt"
         },
         {
           id: "4",
-          name: `Electronics`
+          name: `Electronics`,
+          icon: "fas fa-user"
         },
         {
           id: "5",
-          name: `Men shoes`
+          name: `Men shoes`,
+          icon: "fas fa-shoe-prints"
         },
         {
           id: "6",
-          name: `Women Dresses`
+          name: `Women Dresses`,
+          icon: "fas fa-female"
         },
         {
           id: "7",
-          name: `Women Shoes`
+          name: `Women Shoes`,
+          icon: "fas fa-shoe-prints"
         },
         {
           id: "8",
-          name: `Men Clothes`
+          name: `Men Clothes`,
+          icon: "fas fa-male"
         },
         {
           id: "9",
-          name: `Laptops`
+          name: `Laptops`,
+          icon: "fas fa-laptop"
         },
         {
           id: "10",
-          name: `Accessories`
+          name: `Accessories`,
+          icon: "fas fa-tshirt"
         }
       ]
     };
@@ -171,6 +180,9 @@ export default {
 </script>
 
 <style>
+.center {
+  margin: 0 auto;
+}
 .root {
   margin-top: 80px;
 }
