@@ -35,12 +35,52 @@
                 <i class="fas fa-cart-plus"></i>
               </div>
             </b-button>
+            <hr />
+
+            <p style="text-align: left">PROMOTIONS</p>
+            <b-row>
+              <b-col cols="1">
+                <ul>
+                  <li>
+                    <i id="promo" class="fas fa-star"></i>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <i id="promo" class="fas fa-shipping-fast"></i>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <i id="promo" class="fas fa-star"></i>
+                  </li>
+                </ul>
+              </b-col>
+              <b-col>
+                <a href="#">
+                  <ul>
+                    <li>Stay safe go cashless with cherry pay, Get additional 5% off</li>
+                  </ul>
+                </a>
+
+                <a href="#">
+                  <ul>
+                    <li>Enjoy unlimited free delivery with Cherry Prime</li>
+                  </ul>
+                </a>
+                <a href="#">
+                  <ul>
+                    <li>Buy airtime and data on Cherry one and get up to &#8358;500 back</li>
+                  </ul>
+                </a>
+              </b-col>
+            </b-row>
           </div>
         </b-col>
 
         <b-col>
           <div>
-            <b-jumbotron fluid="false" style="color: blue">
+            <b-jumbotron fluid="false" style="color: #0373fc">
               <template v-slot:lead>DELIVERY AND RETURN</template>
 
               <hr />
@@ -60,7 +100,7 @@
       <b-row>
         <b-col>
           <div>
-            <h4 style="color: blue">Product Details</h4>
+            <h4 style="color: #0373fc">Product Details</h4>
             <hr />
             <h6>{{productItem[0].detail}}</h6>
           </div>
@@ -258,6 +298,12 @@ export default {
 };
 </script>
 <style scoped>
+#promo {
+  font-size: 20px;
+}
+li {
+  list-style-type: none;
+}
 #small {
   width: 50px;
   height: 50px;
